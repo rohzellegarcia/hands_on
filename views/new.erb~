@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<form method="POST" action="/new">
+	<label for="id">ID Number:</label><br/>
+	<input type="text" label="item" placeholder="ID Number"/><br/>
+	<label for="item">Item:</label><br/>
+	<input type="text" label="item" placeholder="Item Name"/><br/>
+	<label for="amount">Amount:</label><br>
+	<input type="number" step="any" min="0" label="amount" placeholder="Item Amount"/><br/>
+	<input type="submit" action="/save">
+<%= expense = Expense.new(id, item, amount) %>
+<%= expenses << expense %>
+</html>
